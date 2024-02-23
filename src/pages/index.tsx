@@ -1,16 +1,5 @@
 import { Container } from "@/components/Container";
-import { Button } from "@/components/ui/button";
-import {
-  FormField,
-  FormItem,
-  FormLabel,
-  FormControl,
-  FormDescription,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Form, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 export default function Component() {
   const form = useForm();
@@ -48,7 +37,7 @@ export default function Component() {
               </div>
               <div className=" grid md:grid-cols-2 gap-2 lg:gap-6 grid-cols-1">
                 <div className="border border-gray-200 rounded-lg dark:border-gray-800 shadow-lg max-w-md">
-                  <Form {...form}>
+                  {/* <Form {...form}>
                     <form
                       onSubmit={form.handleSubmit(onSubmit)}
                       className="w-2/3 space-y-6"
@@ -71,7 +60,7 @@ export default function Component() {
                       />
                       <Button type="submit">Submit</Button>
                     </form>
-                  </Form>
+                  </Form> */}
                 </div>
                 <div className="border border-gray-200 rounded-lg dark:border-gray-800 shadow-lg"></div>
               </div>
